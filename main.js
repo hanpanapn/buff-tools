@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Buff Tools 网易Buff助手
 // @namespace    https://github.com/hanpanapn/buff-tools
-// @version      0.6.1
+// @version      0.6.2
 // @description  buff tools
 // @author       hanpanpan@outlook.com
 // @match        https://buff.163.com/*
@@ -13,7 +13,7 @@
 
 (function() {
     'use strict';
-//
+    //
     function addXMLRequestCallback(callback){
         var oldSend, i;
         if( XMLHttpRequest.callbacks ) {
@@ -46,11 +46,12 @@
 
         let goodIdDom=document.querySelector('.btn-supply-buy')
         let nav = document.querySelector('.nav ul')
-        let switcher = document.getElementById('j_game-switcher')
-        if(!goodIdDom||!page||!nav||!switcher){
+
+        if(!goodIdDom||!page||!nav){
             return
         }
-        switcher.remove()
+        let switcher = document.getElementById('j_game-switcher')
+        switcher&& switcher.remove()
 
         let marketName= document.createElement('li')
         marketName.id='u_title'
@@ -156,6 +157,7 @@
     window.addEventListener('hashchange',
                             function(e)
                             {
+        console.log('url change')
         setBtnPageFun()
     },false);
 
