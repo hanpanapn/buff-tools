@@ -1,18 +1,18 @@
 // ==UserScript==
-// @name         Buff Tools
+// @name         Buff Tools 网易Buff助手
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.3
 // @description  buff tools
 // @author       hanpanpan@outlook.com
 // @match        https://buff.163.com/*
 // @match        https://bbs.tampermonkey.net.cn/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=163.com
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=163.com  
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-
+//
     function addXMLRequestCallback(callback){
         var oldSend, i;
         if( XMLHttpRequest.callbacks ) {
@@ -45,15 +45,32 @@
 
         let goodIdDom=document.querySelector('.btn-supply-buy')
         let nav = document.querySelector('.nav ul')
-        if(!goodIdDom||!page||!nav){
+        let switcher = document.getElementById('j_game-switcher')
+        if(!goodIdDom||!page||!nav||!switcher){
             return
         }
+        switcher.remove()
 
         let marketName= document.createElement('li')
         marketName.id='u_title'
         let title = document.createElement('a')
-        title.innerText=document.title.split('_')[0]
-        title.style.color='red'
+
+
+        let inT= document.createElement('input')
+        inT.id='inT'
+        inT.style.width='260px'
+        inT.value=document.title.split('_')[0]
+        title.appendChild(inT)
+
+        let btnSearch = document.createElement('button')
+        btnSearch.innerText='GO'
+        btnSearch.style.width='51px'
+        btnSearch.style.height='29px'
+        btnSearch.onclick=()=>{
+            location.href='https://buff.163.com/market/csgo#tab=selling&page_num=1&search='+document.getElementById('inT').value
+        }
+        title.appendChild(btnSearch)
+
         marketName.appendChild(title)
         let u_title= document.getElementById('u_title')
         if(u_title){
@@ -71,21 +88,21 @@
         page.appendChild(btn10)
 
         let btn20 = document.createElement('li')
-         if(getQueryVariable('page_num')==20){
+        if(getQueryVariable('page_num')==20){
             btn20.classList.add('active')
         }
         btn20.innerHTML='<a href="https://buff.163.com/goods/'+goodId+'?from=market#tab=selling&page_num=20">第20页</a>'
         page.appendChild(btn20)
 
         let btn30 = document.createElement('li')
-         if(getQueryVariable('page_num')==30){
+        if(getQueryVariable('page_num')==30){
             btn30.classList.add('active')
         }
         btn30.innerHTML='<a href="https://buff.163.com/goods/'+goodId+'?from=market#tab=selling&page_num=30">第30页</a>'
         page.appendChild(btn30)
 
         let btn50 = document.createElement('li')
-         if(getQueryVariable('page_num')==50){
+        if(getQueryVariable('page_num')==50){
             btn50.classList.add('active')
         }
         btn50.innerHTML='<a href="https://buff.163.com/goods/'+goodId+'?from=market#tab=selling&page_num=50">第50页</a>'
