@@ -1,8 +1,5 @@
 
 
-此项目的Page服务是给 [Greasy Fork](https://greasyfork.org/zh-CN) 网站更新使用
-
-main.js 外网地址: [https://hanpanapn.github.io/buff-tools/main.js](https://hanpanapn.github.io/buff-tools/main.js)
 
 ## 使用方式
 
@@ -17,3 +14,11 @@ main.js 外网地址: [https://hanpanapn.github.io/buff-tools/main.js](https://h
 3. 访问Buff时的效果  [法玛斯 | 机械工业 (略有磨损)](https://buff.163.com/goods/34658?from=market#tab=selling&page_num=10)
 
 ![image](https://user-images.githubusercontent.com/15027167/182364912-c9c8a28e-a555-478a-b6f4-6b1eea82c152.png)
+
+
+## 备注
+
+
+此项目的Page服务是给 [Greasy Fork](https://greasyfork.org/zh-CN) 网站更新使用
+
+main.js 外网地址: [https://hanpanapn.github.io/buff-tools/main.js](https://hanpanapn.github.io/buff-tools/main.js)
