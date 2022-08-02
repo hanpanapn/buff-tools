@@ -16,6 +16,19 @@
 ![image](https://user-images.githubusercontent.com/15027167/182364912-c9c8a28e-a555-478a-b6f4-6b1eea82c152.png)
 
 
+## 如何停用脚本
+
+如果脚本出现bug，影响网站正常使用，可按如下方式停用脚本
+
+1. 点击插件图标》点击管理面板
+
+ ![image](https://user-images.githubusercontent.com/15027167/182367517-0d9dee79-a758-48ce-8b9b-cffbd6b9329d.png)
+
+2. 将开关关闭，即可停用脚本
+
+![image](https://user-images.githubusercontent.com/15027167/182367795-82805553-e5ec-4808-a68c-abed41ad5736.png)
+
+
 ## 备注
 
 
