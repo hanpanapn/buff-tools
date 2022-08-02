@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Buff Tools 网易Buff助手
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/hanpanapn/buff-tools
 // @version      0.3
 // @description  buff tools
 // @author       hanpanpan@outlook.com
