@@ -3,7 +3,7 @@
 
 ## 使用方式
 
-1. 安装google浏览器扩展程序：  [tampermonkey](https://chrome.google.com/webstore/search/tampermonkey?hl=zh-CN)
+1. 安装google浏览器扩展程序：  [tampermonkey](https://chrome.google.com/webstore/search/tampermonkey?hl=zh-CN)  ,如果不能翻墙可安装离线版：[离线版油猴](http://t.zoukankan.com/CLAYzhan-p-10880674.html)
 
 ![image](https://user-images.githubusercontent.com/15027167/182363642-93d7e9e4-142e-4c50-b2e5-a280ae83a0bc.png)
 
