@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Buff Tools 网易Buff助手
 // @namespace    https://github.com/hanpanapn/buff-tools
-// @version      0.4
+// @version      0.5
 // @description  buff tools
 // @author       hanpanpan@outlook.com
 // @match        https://buff.163.com/*
 // @match        https://bbs.tampermonkey.net.cn/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=163.com  
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
