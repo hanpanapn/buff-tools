@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  buff tools
-// @author       hanpanpan
+// @author       hanpanpan@outlook.com
 // @match        https://buff.163.com/*
 // @match        https://bbs.tampermonkey.net.cn/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=163.com
