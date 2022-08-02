@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Buff Tools 网易Buff助手
 // @namespace    https://github.com/hanpanapn/buff-tools
-// @version      0.5
+// @version      0.6.1
 // @description  buff tools
 // @author       hanpanpan@outlook.com
 // @match        https://buff.163.com/*
