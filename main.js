@@ -135,7 +135,13 @@
     header.style.width='100%'
     header.style.zIndex='99'
     header.style.background='#1a2132'
-
+    
+    let msg =document.getElementById('notice-wrapper')
+    if(msg){
+        msg.style.position='fixed'
+        msg.style.zIndex='99'
+        msg.style.top='70px'
+    }
 
 
     let setBtnPage = ()=>{
